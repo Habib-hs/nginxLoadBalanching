@@ -1,0 +1,138 @@
+/* Static CSS file for testing browser caching */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.app-id {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cache-info {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-family: monospace;
+}
+
+.button {
+    background: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background: #1976D2;
+}
+
+/* This CSS file will be cached by browsers for better performance */
+
+.cache-demo {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #007bff;
+}
+
+.cache-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cache-type {
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 150px;
+}
+
+.cache-value {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.cache-status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cache-status.never-cached {
+    background: #ff6b6b;
+    color: white;
+}
+
+.cache-status.cached {
+    background: #51cf66;
+    color: white;
+}
+
+.instruction {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3cd;
+    border-radius: 6px;
+    border: 1px solid #ffeaa7;
+    font-weight: bold;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    color: #007bff;
+}
+
+.header-row {
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.header-explanation {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
