@@ -50,4 +50,11 @@ public class IndexController {
 
         return ResponseEntity.ok().headers(headers).body(response);
     }
+
+    // Simple rate-limited API endpoint
+    @GetMapping("/api/rate-limited")
+    @ResponseBody
+    public ResponseEntity<String> rateLimitedApi() {
+        return ResponseEntity.ok("Request successful!");
+    }
 }
